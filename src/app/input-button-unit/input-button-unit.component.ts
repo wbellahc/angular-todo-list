@@ -9,6 +9,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 
 export class InputButtonUnitComponent {
+  @Output() submit: EventEmitter<string> = new EventEmitter<string>();
+  
   title = "Hello World";
 
   submitValue(newTitle: string): void {
@@ -19,5 +21,5 @@ export class InputButtonUnitComponent {
     return (event.target as HTMLInputElement).value;
   }
 
-  @Output() submit: EventEmitter<string> = new EventEmitter<string>();
+  
 }

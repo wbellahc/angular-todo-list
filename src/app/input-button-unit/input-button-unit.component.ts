@@ -11,11 +11,9 @@ import { Component } from '@angular/core';
 export class InputButtonUnitComponent {
   title = "Hello World";
 
-  changeTitle(newTitle: string): void {
-    this.title = newTitle;
-  }
-
   constructor() {
-    this.changeTitle('My First Angular App');
+    setTimeout(() => {
+      this.title = 'This is not the title you are looking for';
+    }, 3000);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'todo-input-button-unit',
@@ -13,15 +13,13 @@ export class InputButtonUnitComponent {
 
   constructor() {}
 
-  ngOnInit(): void {
-
-  }
-
-  changeTitle(newTitle: string): void {
-    this.title = newTitle;
+  submitValue(newTitle: string): void {
+    this.submit.emit(newTitle);
   }
 
   getInputValue(event: Event): string {
     return (event.target as HTMLInputElement).value;
   }
+
+  @Output() submit: EventEmitter<string> = new EventEmitter<string>();
 }

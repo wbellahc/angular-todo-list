@@ -9,5 +9,13 @@ import { Component } from '@angular/core';
 })
 
 export class InputButtonUnitComponent {
-  title = 'Learn about components';
+  title = "Hello World";
+
+  changeTitle(newTitle: string): void {
+    this.title = newTitle;
+  }
+
+  constructor() {
+    this.changeTitle('My First Angular App');
+  }
 }

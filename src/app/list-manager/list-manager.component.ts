@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputButtonUnitComponent } from '../input-button-unit/input-button-unit.component';
 import { TodoItemComponent } from '../todo-item/todo-item.component';

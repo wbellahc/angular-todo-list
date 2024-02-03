@@ -11,8 +11,6 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class InputButtonUnitComponent {
   title = "Hello World";
 
-  constructor() {}
-
   submitValue(newTitle: string): void {
     this.submit.emit(newTitle);
   }

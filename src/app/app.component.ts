@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputButtonUnitComponent } from './input-button-unit/input-button-unit.component';
+import { TodoItemComponent } from './todo-item/todo-item.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     InputButtonUnitComponent,
-    CommonModule
+    CommonModule,
+    TodoItemComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

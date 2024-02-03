@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'todo-input-button-unit',
@@ -10,6 +10,12 @@ import { Component } from '@angular/core';
 
 export class InputButtonUnitComponent {
   title = "Hello World";
+
+  constructor() {}
+
+  ngOnInit(): void {
+
+  }
 
   changeTitle(newTitle: string): void {
     this.title = newTitle;
